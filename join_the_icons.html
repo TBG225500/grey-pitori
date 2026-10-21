@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Icons | Grey Pitori</title>
+    <meta name="description" content="Join the Icons: first access to Grey Pitori drops, member colourways and events in Pitori.">
+    <meta name="theme-color" content="#0d0d0d">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announce">Free delivery in South Africa on orders over R500.</div>
+
+    <header class="site-header">
+        <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">&#9776;</button>
+        <a class="brand" href="index.html" aria-label="Grey Pitori, home">
+            <img src="images/crown-white.png" alt="" width="38" height="29">
+            <span>GREY PITORI</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="our_story.html">Our Story</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="join_the_icons.html" aria-current="page">Join the Icons</a>
+                <a href="contact_us.html">Contact us</a>
+        </nav>
+        <button type="button" class="cart-btn" data-cart-open aria-label="Open cart">
+            <span class="label">Cart</span><span class="count" data-cart-count>0</span>
+        </button>
+    </header>
+
+    <main id="main">
+        <div class="page-hero dark">
+            <h1>Join the Icons</h1>
+            <p>The Icons are the people who carry Pitori with them. Join and you hear first.</p>
+        </div>
+
+        <section class="section" aria-label="What Icons get">
+            <div class="wrap">
+                <div class="perks">
+                    <div>
+                        <h3>First access</h3>
+                        <p>Hear about every drop before it goes public, so you get your size.</p>
+                    </div>
+                    <div>
+                        <h3>Icons only</h3>
+                        <p>Pieces and colourways made for members and not sold anywhere else.</p>
+                    </div>
+                    <div>
+                        <h3>Pitori events</h3>
+                        <p>Invites to pop-ups and community meetups at home in Pretoria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="join-form-title">
+            <div class="wrap form-layout">
+                <div>
+                    <h2 id="join-form-title">Get on the list</h2>
+                    <p>Tell us who you are and what you want to hear about. It takes a minute and you can leave at any time.</p>
+                </div>
+                <div>
+                    <form data-form>
+
+                <div class="field">
+                    <label for="join-name">Full name</label>
+                    <input type="text" id="join-name" name="join-name" required autocomplete="name" data-msg-required="Enter your full name." aria-describedby="join-name-err">
+                    <p class="field-error" id="join-name-err" hidden></p>
+                </div>
+
+                <div class="field">
+                    <label for="join-email">Email address</label>
+                    <input type="email" id="join-email" name="join-email" required autocomplete="email" data-msg-required="Enter your email address." data-msg-invalid="Enter a valid email address, like name@example.com." aria-describedby="join-email-err">
+                    <p class="field-error" id="join-email-err" hidden></p>
+                </div>
+
+                <div class="field">
+                    <label for="join-cell">Cell number <span class="hint">(optional)</span></label>
+                    <input type="tel" id="join-cell" name="join-cell" autocomplete="tel" pattern="[0-9 +\-]{9,16}" data-msg-invalid="Enter a valid cell number, like 082 123 4567." aria-describedby="join-cell-err">
+                    <p class="field-error" id="join-cell-err" hidden></p>
+                </div>
+                        <div class="field">
+                            <label for="join-province">Where are you based?</label>
+                            <select class="input" id="join-province" name="province" required data-msg-required="Choose where you are based." aria-describedby="join-province-err">
+                                <option value="">Choose one</option><option value="Gauteng">Gauteng</option><option value="Western Cape">Western Cape</option><option value="KwaZulu-Natal">KwaZulu-Natal</option><option value="Eastern Cape">Eastern Cape</option><option value="Free State">Free State</option><option value="Limpopo">Limpopo</option><option value="Mpumalanga">Mpumalanga</option><option value="North West">North West</option><option value="Northern Cape">Northern Cape</option><option value="Outside South Africa">Outside South Africa</option>
+                            </select>
+                            <p class="field-error" id="join-province-err" hidden></p>
+                        </div>
+                        <fieldset class="field">
+                            <legend>What do you want to hear about?</legend>
+                            <div class="checks">
+                                <label class="check"><input type="checkbox" name="interest" value="drops" checked> New drops</label>
+                                <label class="check"><input type="checkbox" name="interest" value="events"> Events in Pitori</label>
+                                <label class="check"><input type="checkbox" name="interest" value="collabs"> Collaborations</label>
+                            </div>
+                        </fieldset>
+                        <div class="field">
+                            <label class="check" for="join-consent"><input type="checkbox" id="join-consent" name="consent" required data-msg-required="Tick the box to agree before you join." aria-describedby="join-consent-err"> I agree to receive updates from Grey Pitori.</label>
+                            <p class="field-error" id="join-consent-err" hidden></p>
+                        </div>
+                        <button type="submit" class="btn">Join the Icons</button>
+                    </form>
+                    <div class="form-success" data-success hidden tabindex="-1" role="status">
+                        <h3>You are in</h3>
+                        <p>Welcome to the Icons. We will be in touch before the next drop.</p>
+                        <p><button type="button" class="link-btn" data-form-reset>Sign up someone else</button> or <a href="shop.html">shop the collection</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer dark">
+        <div class="wrap">
+            <svg class="footer-mark" viewBox="0 0 1000 250" role="img" aria-label="Grey Pitori" xmlns="http://www.w3.org/2000/svg"><text x="0" y="232" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="currentColor" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="300">GREY PITORI</text></svg>
+            <div class="footer-cols">
+                <div class="footer-brand">
+                    <img src="images/crown-white.png" alt="" width="56" height="43">
+                    <p>A South African lifestyle brand born in Pretoria, known by its people as Pitori.</p>
+                </div>
+                <div>
+                    <h2>Shop</h2>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html?cat=hoodies">Hoodies</a></li>
+                        <li><a href="shop.html?cat=tees">Tees</a></li>
+                        <li><a href="shop.html?cat=bags">Bags</a></li>
+                        <li><a href="shop.html?cat=socks">Socks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Brand</h2>
+                    <ul>
+                        <li><a href="our_story.html">Our Story</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="join_the_icons.html">Join the Icons</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="contact_us.html#faq">Delivery and returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Follow</h2>
+                    <ul>
+                        <li><a href="#" rel="noopener">Instagram</a></li>
+                        <li><a href="#" rel="noopener">TikTok</a></li>
+                        <li><a href="#" rel="noopener">Twitter/X</a></li>
+                        <li><a href="#" rel="noopener">WhatsApp Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grey Pitori Group. All rights reserved.</p>
+                <p>Pretoria, South Africa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

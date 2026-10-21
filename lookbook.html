@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook | Grey Pitori</title>
+    <meta name="description" content="The Grey Pitori lookbook: Vol. 001 in black and white.">
+    <meta name="theme-color" content="#0d0d0d">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announce">Free delivery in South Africa on orders over R500.</div>
+
+    <header class="site-header">
+        <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">&#9776;</button>
+        <a class="brand" href="index.html" aria-label="Grey Pitori, home">
+            <img src="images/crown-white.png" alt="" width="38" height="29">
+            <span>GREY PITORI</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="our_story.html">Our Story</a>
+                <a href="lookbook.html" aria-current="page">Lookbook</a>
+                <a href="join_the_icons.html">Join the Icons</a>
+                <a href="contact_us.html">Contact us</a>
+        </nav>
+        <button type="button" class="cart-btn" data-cart-open aria-label="Open cart">
+            <span class="label">Cart</span><span class="count" data-cart-count>0</span>
+        </button>
+    </header>
+
+    <main id="main">
+        <div class="page-hero">
+            <h1>Lookbook</h1>
+            <p>Vol. 001 in black and white. Tap any look to see it bigger.</p>
+        </div>
+
+        <div class="toolbar">
+            <div class="toolbar-group" role="group" aria-label="Filter looks by colour">
+                <span class="toolbar-label">Colour</span>
+                <button type="button" class="chip" data-look-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="chip" data-look-filter="black" aria-pressed="false">Black</button>
+                <button type="button" class="chip" data-look-filter="white" aria-pressed="false">White</button>
+            </div>
+            <p class="result-count" id="look-count" role="status" aria-live="polite">14 looks</p>
+        </div>
+
+        <section class="section" style="padding-top:1.5rem" aria-label="Looks">
+            <div class="wrap">
+                <div class="look-grid" id="look-grid">
+                    <button type="button" class="look" data-src="images/look/hoodie-black.jpg" data-caption="Crown Hoodie, black" data-alt="Black hoodie with a white crown on the chest" data-tone="black">
+                        <img src="images/look/hoodie-black.jpg" alt="Black hoodie with a white crown on the chest" loading="lazy">
+                        <span>Crown Hoodie, black</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/tee-white-back.jpg" data-caption="Oversized Tee, back print" data-alt="White oversized tee seen from the back with the Vol. 001 print" data-tone="white">
+                        <img src="images/look/tee-white-back.jpg" alt="White oversized tee seen from the back with the Vol. 001 print" loading="lazy">
+                        <span>Oversized Tee, back print</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/tote-black.jpg" data-caption="Issue 001 Tote, black" data-alt="Black tote bag front and back" data-tone="black">
+                        <img src="images/look/tote-black.jpg" alt="Black tote bag front and back" loading="lazy">
+                        <span>Issue 001 Tote, black</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/society-tote.jpg" data-caption="Society Tote" data-alt="White Grey Pitori Society tote leaning against a wall" data-tone="white">
+                        <img src="images/look/society-tote.jpg" alt="White Grey Pitori Society tote leaning against a wall" loading="lazy">
+                        <span>Society Tote</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/tee-black-front.jpg" data-caption="Oversized Tee, black" data-alt="Black oversized tee with the Grey Pitori wordmark on the chest" data-tone="black">
+                        <img src="images/look/tee-black-front.jpg" alt="Black oversized tee with the Grey Pitori wordmark on the chest" loading="lazy">
+                        <span>Oversized Tee, black</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/hoodie-white.jpg" data-caption="Crown Hoodie, white" data-alt="White hoodie with a black crown on the chest" data-tone="white">
+                        <img src="images/look/hoodie-white.jpg" alt="White hoodie with a black crown on the chest" loading="lazy">
+                        <span>Crown Hoodie, white</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/socks-white.jpg" data-caption="Crown Socks, white" data-alt="Pair of white ribbed socks with a black crown" data-tone="white">
+                        <img src="images/look/socks-white.jpg" alt="Pair of white ribbed socks with a black crown" loading="lazy">
+                        <span>Crown Socks, white</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/tee-black-back.jpg" data-caption="Oversized Tee, back print" data-alt="Black oversized tee seen from the back with the Vol. 001 print" data-tone="black">
+                        <img src="images/look/tee-black-back.jpg" alt="Black oversized tee seen from the back with the Vol. 001 print" loading="lazy">
+                        <span>Oversized Tee, back print</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/crowntee-white.jpg" data-caption="Crown Tee, white" data-alt="White tee with a black crown on the chest" data-tone="white">
+                        <img src="images/look/crowntee-white.jpg" alt="White tee with a black crown on the chest" loading="lazy">
+                        <span>Crown Tee, white</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/tote-white.jpg" data-caption="Issue 001 Tote, white" data-alt="White tote bag front and back" data-tone="white">
+                        <img src="images/look/tote-white.jpg" alt="White tote bag front and back" loading="lazy">
+                        <span>Issue 001 Tote, white</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/crown.jpg" data-caption="The crown" data-alt="The Grey Pitori hand-drawn crown in white on black" data-tone="black">
+                        <img src="images/look/crown.jpg" alt="The Grey Pitori hand-drawn crown in white on black" loading="lazy">
+                        <span>The crown</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/socks-black.jpg" data-caption="Crown Socks, black" data-alt="Pair of black ribbed socks with a white crown" data-tone="black">
+                        <img src="images/look/socks-black.jpg" alt="Pair of black ribbed socks with a white crown" loading="lazy">
+                        <span>Crown Socks, black</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/crowntee-black.jpg" data-caption="Crown Tee, black" data-alt="Black tee with a white crown on the chest" data-tone="black">
+                        <img src="images/look/crowntee-black.jpg" alt="Black tee with a white crown on the chest" loading="lazy">
+                        <span>Crown Tee, black</span>
+                    </button>
+                    <button type="button" class="look" data-src="images/look/tee-white-front.jpg" data-caption="Oversized Tee, white" data-alt="White oversized tee with the Grey Pitori wordmark on the chest" data-tone="white">
+                        <img src="images/look/tee-white-front.jpg" alt="White oversized tee with the Grey Pitori wordmark on the chest" loading="lazy">
+                        <span>Oversized Tee, white</span>
+                    </button>
+                </div>
+                <p style="text-align:center;margin-top:2rem"><a class="btn" href="shop.html">Shop the collection</a></p>
+            </div>
+        </section>
+
+        <dialog class="lightbox" id="lightbox" aria-label="Lookbook viewer">
+            <button type="button" class="icon-btn modal-close" data-close aria-label="Close viewer">&#10005;</button>
+            <div class="lightbox-inner">
+                <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+                <div class="lightbox-bar">
+                    <button type="button" class="icon-btn" id="lightbox-prev" aria-label="Previous look">&larr;</button>
+                    <p id="lightbox-cap"></p>
+                    <button type="button" class="icon-btn" id="lightbox-next" aria-label="Next look">&rarr;</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="site-footer dark">
+        <div class="wrap">
+            <svg class="footer-mark" viewBox="0 0 1000 250" role="img" aria-label="Grey Pitori" xmlns="http://www.w3.org/2000/svg"><text x="0" y="232" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="currentColor" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="300">GREY PITORI</text></svg>
+            <div class="footer-cols">
+                <div class="footer-brand">
+                    <img src="images/crown-white.png" alt="" width="56" height="43">
+                    <p>A South African lifestyle brand born in Pretoria, known by its people as Pitori.</p>
+                </div>
+                <div>
+                    <h2>Shop</h2>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html?cat=hoodies">Hoodies</a></li>
+                        <li><a href="shop.html?cat=tees">Tees</a></li>
+                        <li><a href="shop.html?cat=bags">Bags</a></li>
+                        <li><a href="shop.html?cat=socks">Socks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Brand</h2>
+                    <ul>
+                        <li><a href="our_story.html">Our Story</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="join_the_icons.html">Join the Icons</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="contact_us.html#faq">Delivery and returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Follow</h2>
+                    <ul>
+                        <li><a href="#" rel="noopener">Instagram</a></li>
+                        <li><a href="#" rel="noopener">TikTok</a></li>
+                        <li><a href="#" rel="noopener">Twitter/X</a></li>
+                        <li><a href="#" rel="noopener">WhatsApp Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grey Pitori Group. All rights reserved.</p>
+                <p>Pretoria, South Africa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

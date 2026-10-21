@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us | Grey Pitori</title>
+    <meta name="description" content="Contact Grey Pitori in Pretoria, South Africa. Questions about orders, sizing or collaborations.">
+    <meta name="theme-color" content="#0d0d0d">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announce">Free delivery in South Africa on orders over R500.</div>
+
+    <header class="site-header">
+        <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">&#9776;</button>
+        <a class="brand" href="index.html" aria-label="Grey Pitori, home">
+            <img src="images/crown-white.png" alt="" width="38" height="29">
+            <span>GREY PITORI</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="our_story.html">Our Story</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="join_the_icons.html">Join the Icons</a>
+                <a href="contact_us.html" aria-current="page">Contact us</a>
+        </nav>
+        <button type="button" class="cart-btn" data-cart-open aria-label="Open cart">
+            <span class="label">Cart</span><span class="count" data-cart-count>0</span>
+        </button>
+    </header>
+
+    <main id="main">
+        <div class="page-hero">
+            <h1>Contact us</h1>
+            <p>Questions about an order, sizing, or working together? Send a message and we will reply.</p>
+        </div>
+
+        <section class="section" aria-labelledby="contact-form-title">
+            <div class="wrap form-layout">
+                <div>
+                    <h2 id="contact-form-title">Say something</h2>
+                    <dl class="contact-list">
+                        <div><dt>Based in</dt><dd>Pretoria, South Africa</dd></div>
+                        <div><dt>Email</dt><dd><a href="mailto:hello@greypitori.co.za">hello@greypitori.co.za</a></dd></div>
+                        <div><dt>Follow</dt><dd>Instagram, TikTok, Twitter/X and our WhatsApp Channel (links in the footer)</dd></div>
+                    </dl>
+                </div>
+                <div>
+                    <form data-form>
+
+                <div class="field">
+                    <label for="contact-name">Full name</label>
+                    <input type="text" id="contact-name" name="contact-name" required autocomplete="name" data-msg-required="Enter your full name." aria-describedby="contact-name-err">
+                    <p class="field-error" id="contact-name-err" hidden></p>
+                </div>
+
+                <div class="field">
+                    <label for="contact-email">Email address</label>
+                    <input type="email" id="contact-email" name="contact-email" required autocomplete="email" data-msg-required="Enter your email address." data-msg-invalid="Enter a valid email address, like name@example.com." aria-describedby="contact-email-err">
+                    <p class="field-error" id="contact-email-err" hidden></p>
+                </div>
+                        <div class="field">
+                            <label for="contact-topic">What is this about?</label>
+                            <select class="input" id="contact-topic" name="topic" required data-msg-required="Choose a topic." aria-describedby="contact-topic-err">
+                                <option value="">Choose one</option>
+                                <option>An order</option>
+                                <option>Sizing</option>
+                                <option>Collaboration</option>
+                                <option>Something else</option>
+                            </select>
+                            <p class="field-error" id="contact-topic-err" hidden></p>
+                        </div>
+                        <div class="field">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" required minlength="10" data-msg-required="Write your message." data-msg-short="Write at least 10 characters so we can help." aria-describedby="contact-message-err"></textarea>
+                            <p class="field-error" id="contact-message-err" hidden></p>
+                        </div>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                    <div class="form-success" data-success hidden tabindex="-1" role="status">
+                        <h3>Message sent</h3>
+                        <p>Thanks for getting in touch. We will reply to the email address you gave us.</p>
+                        <p><button type="button" class="link-btn" data-form-reset>Send another message</button></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq" aria-labelledby="faq-title">
+            <div class="wrap">
+                <div class="section-head"><h2 id="faq-title">Delivery, returns and sizing</h2></div>
+                <div class="faq">
+                    <details>
+                        <summary>How long does delivery take?</summary>
+                        <p>We deliver within South Africa. Delivery usually takes 3 to 7 working days, and orders over R1,500 ship free.</p>
+                    </details>
+                    <details>
+                        <summary>Can I return or exchange something?</summary>
+                        <p>Unworn items with their tags can be exchanged within 14 days. Email us your order number and we will sort it out.</p>
+                    </details>
+                    <details>
+                        <summary>How do the sizes fit?</summary>
+                        <p>Our hoodies and tees are cut oversized. Take your usual size for the full look, or size down one for a closer fit.</p>
+                    </details>
+                    <details>
+                        <summary>Do you ship outside South Africa?</summary>
+                        <p>Not yet. Join the Icons and we will tell you first when we do.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer dark">
+        <div class="wrap">
+            <svg class="footer-mark" viewBox="0 0 1000 250" role="img" aria-label="Grey Pitori" xmlns="http://www.w3.org/2000/svg"><text x="0" y="232" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="currentColor" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="300">GREY PITORI</text></svg>
+            <div class="footer-cols">
+                <div class="footer-brand">
+                    <img src="images/crown-white.png" alt="" width="56" height="43">
+                    <p>A South African lifestyle brand born in Pretoria, known by its people as Pitori.</p>
+                </div>
+                <div>
+                    <h2>Shop</h2>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html?cat=hoodies">Hoodies</a></li>
+                        <li><a href="shop.html?cat=tees">Tees</a></li>
+                        <li><a href="shop.html?cat=bags">Bags</a></li>
+                        <li><a href="shop.html?cat=socks">Socks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Brand</h2>
+                    <ul>
+                        <li><a href="our_story.html">Our Story</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="join_the_icons.html">Join the Icons</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="contact_us.html#faq">Delivery and returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Follow</h2>
+                    <ul>
+                        <li><a href="#" rel="noopener">Instagram</a></li>
+                        <li><a href="#" rel="noopener">TikTok</a></li>
+                        <li><a href="#" rel="noopener">Twitter/X</a></li>
+                        <li><a href="#" rel="noopener">WhatsApp Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grey Pitori Group. All rights reserved.</p>
+                <p>Pretoria, South Africa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

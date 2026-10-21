@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Grey Pitori</title>
+    <meta name="description" content="Shop Grey Pitori hoodies, oversized tees, tote bags and socks in black and white.">
+    <meta name="theme-color" content="#0d0d0d">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announce">Free delivery in South Africa on orders over R500.</div>
+
+    <header class="site-header">
+        <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">&#9776;</button>
+        <a class="brand" href="index.html" aria-label="Grey Pitori, home">
+            <img src="images/crown-white.png" alt="" width="38" height="29">
+            <span>GREY PITORI</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="shop.html" aria-current="page">Shop</a>
+                <a href="our_story.html">Our Story</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="join_the_icons.html">Join the Icons</a>
+                <a href="contact_us.html">Contact us</a>
+        </nav>
+        <button type="button" class="cart-btn" data-cart-open aria-label="Open cart">
+            <span class="label">Cart</span><span class="count" data-cart-count>0</span>
+        </button>
+    </header>
+
+    <main id="main">
+        <div class="page-hero">
+            <h1>Shop</h1>
+            <p>Hoodies, tees, bags and socks in black and white. Pick a colour, pick a size, and it is yours.</p>
+        </div>
+
+        <div class="toolbar">
+            <div class="toolbar-group" role="group" aria-label="Filter by category">
+                <span class="toolbar-label">Category</span>
+                    <button type="button" class="chip" data-filter-cat="all" aria-pressed="true">All</button>
+                    <button type="button" class="chip" data-filter-cat="hoodies" aria-pressed="false">Hoodies</button>
+                    <button type="button" class="chip" data-filter-cat="tees" aria-pressed="false">Tees</button>
+                    <button type="button" class="chip" data-filter-cat="bags" aria-pressed="false">Bags</button>
+                    <button type="button" class="chip" data-filter-cat="socks" aria-pressed="false">Socks</button>
+            </div>
+            <div class="toolbar-group" role="group" aria-label="Filter by colour">
+                <span class="toolbar-label">Colour</span>
+                <button type="button" class="chip" data-filter-colour="all" aria-pressed="true">All</button>
+                <button type="button" class="chip" data-filter-colour="black" aria-pressed="false">Black</button>
+                <button type="button" class="chip" data-filter-colour="white" aria-pressed="false">White</button>
+            </div>
+            <div class="toolbar-group">
+                <label class="toolbar-label" for="sort">Sort by</label>
+                <select class="select" id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="low">Price: low to high</option>
+                    <option value="high">Price: high to low</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="section" style="padding-top:1.5rem" aria-label="Products">
+            <div class="wrap">
+                <p class="result-count" id="result-count" role="status" aria-live="polite">6 products</p>
+                <div class="grid grid-3" id="product-grid" style="margin-top:1.2rem">
+                <article class="card" data-id="crown-hoodie" data-name="Crown Hoodie" data-category="hoodies" data-price="899" data-order="0" data-colours="black,white" data-colour="black" data-sizes="S,M,L,XL,XXL" data-desc="Oversized hoodie with the hand-drawn crown printed across the chest." data-details="Oversized fit with a drop shoulder|Kangaroo pocket and ribbed cuffs|Crown print on the chest" data-imgs-black="images/hoodie-black.jpg" data-imgs-white="images/hoodie-white.jpg">
+                    <button type="button" class="card-media" aria-label="View Crown Hoodie">
+                    <img class="main" src="images/hoodie-black.jpg" alt="Crown Hoodie in black" width="1000" height="1250" loading="lazy">
+                    </button>
+                    <div class="card-body">
+                        <h3>Crown Hoodie</h3>
+                        <p class="price">R899</p>
+                    </div>
+                    <div class="swatches" role="group" aria-label="Colour">
+                        <button type="button" class="swatch" data-colour="black" aria-label="Black" aria-pressed="true"></button>
+                        <button type="button" class="swatch" data-colour="white" aria-label="White" aria-pressed="false"></button>
+                    </div>
+                    <button type="button" class="btn btn-sm" data-card-add>Select size</button>
+                </article>
+                <article class="card" data-id="oversized-tee" data-name="Oversized Tee" data-category="tees" data-price="449" data-order="1" data-colours="black,white" data-colour="black" data-sizes="S,M,L,XL,XXL" data-desc="Boxy oversized tee. The Grey Pitori wordmark sits on the chest and the full Vol. 001 print runs across the back." data-details="Oversized fit with a drop shoulder|Wordmark and Est. 2025 on the chest|Vol. 001, Issue 001 print on the back" data-imgs-black="images/tee-black-front.jpg|images/tee-black-back.jpg" data-imgs-white="images/tee-white-front.jpg|images/tee-white-back.jpg">
+                    <button type="button" class="card-media has-alt" aria-label="View Oversized Tee">
+                    <img class="main" src="images/tee-black-front.jpg" alt="Oversized Tee in black" width="1000" height="1250" loading="lazy">
+                    <img class="alt" src="images/tee-black-back.jpg" alt="" width="1000" height="1250" loading="lazy">
+                    </button>
+                    <div class="card-body">
+                        <h3>Oversized Tee</h3>
+                        <p class="price">R449</p>
+                    </div>
+                    <div class="swatches" role="group" aria-label="Colour">
+                        <button type="button" class="swatch" data-colour="black" aria-label="Black" aria-pressed="true"></button>
+                        <button type="button" class="swatch" data-colour="white" aria-label="White" aria-pressed="false"></button>
+                    </div>
+                    <button type="button" class="btn btn-sm" data-card-add>Select size</button>
+                </article>
+                <article class="card" data-id="crown-tee" data-name="Crown Tee" data-category="tees" data-price="399" data-order="2" data-colours="black,white" data-colour="black" data-sizes="S,M,L,XL,XXL" data-desc="Relaxed tee with the crown printed on the chest." data-details="Relaxed oversized fit|Crown print on the chest" data-imgs-black="images/crowntee-black.jpg" data-imgs-white="images/crowntee-white.jpg">
+                    <button type="button" class="card-media" aria-label="View Crown Tee">
+                    <img class="main" src="images/crowntee-black.jpg" alt="Crown Tee in black" width="1000" height="1250" loading="lazy">
+                    </button>
+                    <div class="card-body">
+                        <h3>Crown Tee</h3>
+                        <p class="price">R399</p>
+                    </div>
+                    <div class="swatches" role="group" aria-label="Colour">
+                        <button type="button" class="swatch" data-colour="black" aria-label="Black" aria-pressed="true"></button>
+                        <button type="button" class="swatch" data-colour="white" aria-label="White" aria-pressed="false"></button>
+                    </div>
+                    <button type="button" class="btn btn-sm" data-card-add>Select size</button>
+                </article>
+                <article class="card" data-id="issue-001-tote" data-name="Issue 001 Tote" data-category="bags" data-price="249" data-order="3" data-colours="black,white" data-colour="black" data-sizes="One size" data-desc="Canvas tote. The front carries the Vol. 001 print: Not for everybody. Good. The crown sits on the back." data-details="Canvas tote with long handles|Vol. 001, Issue 001 print on the front|Crown on the back" data-imgs-black="images/tote-black-front.jpg|images/tote-black-back.jpg" data-imgs-white="images/tote-white-front.jpg|images/tote-white-back.jpg">
+                    <button type="button" class="card-media has-alt" aria-label="View Issue 001 Tote">
+                    <img class="main" src="images/tote-black-front.jpg" alt="Issue 001 Tote in black" width="1000" height="1250" loading="lazy">
+                    <img class="alt" src="images/tote-black-back.jpg" alt="" width="1000" height="1250" loading="lazy">
+                    </button>
+                    <div class="card-body">
+                        <h3>Issue 001 Tote</h3>
+                        <p class="price">R249</p>
+                    </div>
+                    <div class="swatches" role="group" aria-label="Colour">
+                        <button type="button" class="swatch" data-colour="black" aria-label="Black" aria-pressed="true"></button>
+                        <button type="button" class="swatch" data-colour="white" aria-label="White" aria-pressed="false"></button>
+                    </div>
+                    <button type="button" class="btn btn-sm" data-card-add>Add to cart</button>
+                </article>
+                <article class="card" data-id="society-tote" data-name="Society Tote" data-category="bags" data-price="279" data-order="4" data-colours="white" data-colour="white" data-sizes="One size" data-desc="Natural white canvas tote printed with the Grey Pitori Society wordmark and our line: Not for everybody." data-details="Canvas tote with long handles|Grey Pitori Society print on the front" data-imgs-white="images/society-tote.jpg">
+                    <button type="button" class="card-media" aria-label="View Society Tote">
+                    <img class="main" src="images/society-tote.jpg" alt="Society Tote in white" width="1000" height="1250" loading="lazy">
+                    </button>
+                    <div class="card-body">
+                        <h3>Society Tote</h3>
+                        <p class="price">R279</p>
+                    </div>
+                    <button type="button" class="btn btn-sm" data-card-add>Add to cart</button>
+                </article>
+                <article class="card" data-id="crown-socks" data-name="Crown Socks" data-category="socks" data-price="129" data-order="5" data-colours="black,white" data-colour="black" data-sizes="One size" data-desc="Ribbed crew socks with the crown on the leg." data-details="Ribbed crew length|Crown on both socks" data-imgs-black="images/socks-black.jpg" data-imgs-white="images/socks-white.jpg">
+                    <button type="button" class="card-media" aria-label="View Crown Socks">
+                    <img class="main" src="images/socks-black.jpg" alt="Crown Socks in black" width="1000" height="1250" loading="lazy">
+                    </button>
+                    <div class="card-body">
+                        <h3>Crown Socks</h3>
+                        <p class="price">R129</p>
+                    </div>
+                    <div class="swatches" role="group" aria-label="Colour">
+                        <button type="button" class="swatch" data-colour="black" aria-label="Black" aria-pressed="true"></button>
+                        <button type="button" class="swatch" data-colour="white" aria-label="White" aria-pressed="false"></button>
+                    </div>
+                    <button type="button" class="btn btn-sm" data-card-add>Add to cart</button>
+                </article>
+                </div>
+                <div class="empty-state" id="empty-state" hidden>
+                    <p>No products match those filters.</p>
+                    <button type="button" class="btn" data-clear-filters>Clear filters</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer dark">
+        <div class="wrap">
+            <svg class="footer-mark" viewBox="0 0 1000 250" role="img" aria-label="Grey Pitori" xmlns="http://www.w3.org/2000/svg"><text x="0" y="232" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="currentColor" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="300">GREY PITORI</text></svg>
+            <div class="footer-cols">
+                <div class="footer-brand">
+                    <img src="images/crown-white.png" alt="" width="56" height="43">
+                    <p>A South African lifestyle brand born in Pretoria, known by its people as Pitori.</p>
+                </div>
+                <div>
+                    <h2>Shop</h2>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html?cat=hoodies">Hoodies</a></li>
+                        <li><a href="shop.html?cat=tees">Tees</a></li>
+                        <li><a href="shop.html?cat=bags">Bags</a></li>
+                        <li><a href="shop.html?cat=socks">Socks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Brand</h2>
+                    <ul>
+                        <li><a href="our_story.html">Our Story</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="join_the_icons.html">Join the Icons</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="contact_us.html#faq">Delivery and returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Follow</h2>
+                    <ul>
+                        <li><a href="#" rel="noopener">Instagram</a></li>
+                        <li><a href="#" rel="noopener">TikTok</a></li>
+                        <li><a href="#" rel="noopener">Twitter/X</a></li>
+                        <li><a href="#" rel="noopener">WhatsApp Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grey Pitori Group. All rights reserved.</p>
+                <p>Pretoria, South Africa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
